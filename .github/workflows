@@ -1,0 +1,11 @@
+name: Measuring
+on:
+  push:
+    branches:
+      - "*"
+jobs:
+  deploy:
+    name: Deploy app
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
